@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B11-A3</title>
+    <title>Browse4Pets</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,12 @@
                     colors: {
                         clifford: '#da373d',
                         'four-clr': '#FFDC26',
+                        'gray-font': 'rgba(17, 17, 17, 1)'
                     }
                 }
             }
         }
-    </script> 
+    </script>
     <!-- style -->
     <style>
         .font-sora {
@@ -34,62 +35,68 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
-            }
-        .font-display {
-             font-family: "ADLaM Display", serif;
-            font-weight: 400;
-              font-style: normal;
         }
-
-     
+    
+        .font-display {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
-<body">
-    <header class="bg-[#FFF9F4]">
+<body>
+    <!-- header -->
+    <header>
         <!-- Nav bar -->
-        <div class="md:container mx-auto">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+        <div class="bg-[#FFF9F4]">
+            <div class="md:container mx-auto">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <a class="text-xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
                             <li><a>Find a pet</a></li>
                             <li><a>Breeds</a></li>
                             <li><a>Contact us</a></li>
                         </ul>
                     </div>
-                    <a class="text-xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Find a pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <button class="btn btn-ghost btn-circle">
-                        <div class="indicator">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="navbar-end">
+                        <button class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                                <span class="badge badge-xs badge-primary indicator-item"></span>
+                            </div>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
-                            <span class="badge badge-xs badge-primary indicator-item"></span>
-                        </div>
-                    </button>
-                    <button class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </button>
-                    <a class="btn btn-outline border-four-clr mr-4">Login</a>
-                    <a class="btn bg-four-clr">Register</a>
+                        </button>
+                        <a class="btn btn-outline border-four-clr mr-4">Login</a>
+                        <a class="btn bg-four-clr">Register</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,52 +104,32 @@
         <div class="md:container mx-auto border">
             <div class="border">
                 <h3 class="font-display text-6xl font-bold text-start">Pamper Your Pet, Because They Deserve the Bes</h3>
-                <p class="font-sora text-2xl font-normal text-start">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with
-                joy!</p>
-                <button class="btn btn-warning font-sora text-2xl font-normal">Find a pet</button>
+                <p class="font-sora text-xl font-normal text-gray-600 text-start">Discover a world of treats, toys, and
+                    essentials handpicked for your furry friends. Shop now and make tails wag with
+                    joy!</p>
+                <button class="btn btn-warning font-sora text-xl font-normal">Find a pet</button>
             </div>
         </div>
     </header>
+    <!-- main -->
     <main>
-        <!-- Section Categories -->
-        <section class="md:container mx-auto">
-            <div>Browse By Categories</div>
+    <!-- Browse By Categories -->
+        <section>
             <div>
-                <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
-                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:15;"></span>
-                        </span>
-                        days
-                    </div>
-                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:10;"></span>
-                        </span>
-                        hours
-                    </div>
-                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:24;"></span>
-                        </span>
-                        min
-                    </div>
-                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:${counter};"></span>
-                        </span>
-                        sec
-                    </div>
-                </div>
+                <h1>Browse By Categories</h1>
             </div>
         </section>
-        <!-- Section Product -->
-        <section class="md:container mx-auto">
-            <div>Trending Pet Products</div>
-        <!-- Section Price -->
+        <!-- Trending Pet Products -->
+        <section>
+            <div>
+                <h1>Browse By Categories</h1>
+            </div>
         </section>
-        <section class="md:container mx-auto">
-            <div>Everyday low Price</div>
+        <!-- Everyday low Price -->
+        <section>
+            <div>
+                <h1>Browse By Categories</h1>
+            </div>
         </section>
     </main>
     <!-- footer -->
@@ -190,4 +177,5 @@
             </nav>
         </footer>
     </footer>
+</body>
 </html>
