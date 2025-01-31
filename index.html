@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS v4-->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- DaisyUI -->
+    <!-- DaisyUI v4-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS Custom -->
@@ -19,10 +19,10 @@
         tailwind.config = {
             theme: {
                 extend: {
+
                     colors: {
                         clifford: '#da373d',
                         'four-clr': '#FFDC26',
-                        'gray-font': 'rgba(17, 17, 17, 1)'
                     }
                 }
             }
@@ -46,10 +46,9 @@
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="md:container mx-auto">
         <!-- Nav bar -->
         <div class="bg-[#FFF9F4]">
-            <div class="md:container mx-auto">
                 <div class="navbar">
                     <div class="navbar-start">
                         <div class="dropdown">
@@ -98,43 +97,49 @@
                         <a class="btn bg-four-clr">Register</a>
                     </div>
                 </div>
-            </div>
         </div>
         <!-- Banner -->
-                <div class="md:container mx-auto py-[100px] bg-[url(/c1-assets/cat-big.png)] bg-cover bg-center bg-no-repeat w-100% border">
-                    <div class="border w-5/12 h-[750px]">
-                        <h3 class="font-display text-6xl font-bold text-start">
-                            Pamper Your Pet, Because They Deserve the Bes
-                        </h3>
-                        <p class="font-sora text-xl font-normal text-gray-600 text-start py-4">Discover a world of treats, toys, and
-                            essentials handpicked for your furry friends. Shop now and make tails wag with
-                            joy!
-                        </p>
-                        <button class="btn btn-warning font-sora text-xl font-normal">
-                            Find a pet
-                        </button>
+                    <div class="bg-[url(c1-assets/cat-big.png)] bg-cover bg-left bg-no-repeat h-[850px]">
+                        <div class="w-5/12 mt-6 pt-24">
+                            <!-- header Title -->
+                            <h3 class="font-display text-6xl font-bold text-start">
+                                Pamper Your Pet, Because They Deserve the Bes
+                            </h3>
+                            <!-- header info -->
+                            <p class="font-sora text-xl font-normal text-gray-600 text-start py-4">Discover a world of treats, toys, and
+                                essentials handpicked for your furry friends. Shop now and make tails wag with
+                                joy!
+                            </p>
+                            <!-- header button -->
+                            <button class="btn btn-warning font-sora text-xl font-normal">
+                                Find a pet
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>
     </header>
     <!-- main -->
     <main>
     <!-- Browse By Categories -->
-        <section>
+        <section class="md:container mx-auto">
             <div>
-                <h1>Browse By Categories</h1>
+                <div class="border">
+                    <h1 class="font-display text-lg font-bold text-start">Browse By Categories</h1>
+                </div>
+                <div class="bg-[#F9DF8A] h-64 w-52 rounded-xl">
+                    
+                </div>
             </div>
         </section>
         <!-- Trending Pet Products -->
-        <section>
+        <section class="md:container mx-auto">
             <div>
-                <h1>Browse By Categories</h1>
+                <h1 class="font-display text-6xl font-bold text-start">Browse By Categories</h1>
             </div>
         </section>
         <!-- Everyday low Price -->
-        <section>
+        <section class="md:container mx-auto">
             <div>
-                <h1>Browse By Categories</h1>
+                <h1 class="font-display text-6xl font-bold text-start">Browse By Categories</h1>
             </div>
         </section>
     </main>
