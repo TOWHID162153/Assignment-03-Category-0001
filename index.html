@@ -23,6 +23,7 @@
                     colors: {
                         clifford: '#da373d',
                         'four-clr': '#FFDC26',
+                        'info-clr': '#585858',
                     }
                 }
             }
@@ -47,6 +48,7 @@
 <body>
     <!-- header -->
     <header>
+        <!-- navbar -->
         <!-- nav bg color -->
         <div class="bg-[#FFF9F4]">
             <!-- nav ber -->
@@ -55,7 +57,7 @@
                     <div class="navbar-start">
                         <!-- nav dropdown -->
                         <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -88,12 +90,16 @@
                         </ul>
                     </div>
                     <!-- nav right part -->
-                    <div class="navbar-end hidden lg:flex">
+                    <div class="navbar-end hidden md:flex">
+`   
+
                         <!-- bail & search button -->
-                        <ul class="menu hidden lg:flex menu-horizontal px-1">
+                        <ul class="hidden lg:menu lg:flex lg:menu-horizontal lg:gap-4">
                             <li><a><img src="c1-assets/Vector.png" alt="ve"></a></li>
                             <li><a><img src="c1-assets/search.png" alt="c1-assets"></li>
                         </ul>
+
+
                         <!-- log in button -->
                         <a class="btn btn-outline border-four-clr font-sora font-normal text-xl text-[##111111] mr-4">Login</a>
                         <!-- register button -->
@@ -102,44 +108,57 @@
             </div>
         </div>
         <!-- Banner -->
-                    <div class="bg-[url(c1-assets/cat-big.png)] bg-cover bg-left bg-no-repeat h-[850px]">
-                        <div class="w-5/12 mt-6 pt-24">
+                    <div class="md:container mx-auto lg:bg-[url(c1-assets/cat-big.png)] bg-cover bg-center bg-no-repeat md:h-[850px]">
+                        <div class="md:w-3/4 lg:w-5/12 md:mt-5 md:pt:12 lg:mt-6 lg:pt-24 border">
                             <!-- header Title -->
-                            <h3 class="font-display text-6xl font-bold text-start">
+                            <h3 class="font-display text-3xl text-center md:text-5xl lg:text-6xl font-bold lg:text-start">
                                 Pamper Your Pet, Because They Deserve the Bes
                             </h3>
                             <!-- header info -->
-                            <p class="font-sora text-xl font-normal text-gray-600 text-start py-4">Discover a world of treats, toys, and
+                            <p class="font-sora text-base md:text-lg lg:text-xl font-normal text-info-clr MD:text-start py-4">Discover a world of treats, toys, and
                                 essentials handpicked for your furry friends. Shop now and make tails wag with
                                 joy!
                             </p>
                             <!-- header button -->
-                            <button class="btn btn-warning font-sora text-xl font-normal">
+                            <button class="btn btn-warning font-sora text-base md:text-lg lg:text-xl font-normal">
                                 Find a pet
                             </button>
+                        </div>
+                        <div class="lg:hidden">
+                            <img src="c1-assets/cat-big.png" alt="logo-header">
                         </div>
                     </div>
     </header>
     <!-- main -->
     <main>
     <!-- Browse By Categories -->
-        <section class="md:container mx-auto">
+        <section class="md:container mx-auto my-36">
+        <!-- section main title -->
+            <div class="border mb-12">
+                <h1 class="font-display font-bold text-4xl text-[#111] text-start">Browse By Categories</h1>
+            </div>
+            <!-- box part -->
             <div>
-                <div class="border">
-                    <h1 class="font-display text-lg font-bold text-start">Browse By Categories</h1>
-                </div>
                 <div class="bg-[#F9DF8A] h-64 w-52 rounded-xl">
-                    
                 </div>
             </div>
         </section>
-        <!-- Trending Pet Products -->
-        <section class="md:container mx-auto">
-            <div>
+    <!-- Trending Pet Products -->
+        <section class="md:container mx-auto my-36">
+        <!-- section main title -->
+            <div class="border mb-12">
                 <h1 class="font-display text-6xl font-bold text-start">Browse By Categories</h1>
             </div>
+        <div class="flex flex-col">
+            <div class="w-4/12 bg-[#F9DF8A]">
+
+            </div>
+            <div>
+
+            </div>
+        </div>
         </section>
-        <!-- Everyday low Price -->
+    <!-- Everyday low Price -->
         <section class="md:container mx-auto">
             <div>
                 <h1 class="font-display text-6xl font-bold text-start">Browse By Categories</h1>
