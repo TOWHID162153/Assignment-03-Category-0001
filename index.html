@@ -75,7 +75,7 @@
                     </div>
                     <!-- nav logo -->
                     <div class="flex justify-center items-center gap-3">
-                        <div class="w-12 h-12">
+                        <div class="w-12 h-12 hover:animate-bounce link link-hover">
                             <img class="w-100%" src="c1-assets/logo-header.png" alt="logo-header">
                         </div>
                         <div class="hidden md:block">
@@ -139,10 +139,12 @@
     <main class="relative lg:-top-52">
         <!-- section -->
         <!-- Browse By Categories -->
-        <section class="md:container mx-auto">
-            <h1 class="font-display text-2xl md:text-3xt lg:text-4xl text-[#111] text-start my-8 ml-4">
-                Browse By Categories
-            </h1>
+        <section class="md:container md:mx-auto my-8 mx-4 relative -top-22">
+            <div class="pb-12">
+                <h1 class="font-display text-2xl md:text-3xl lg:text-4xl text-[#111] text-start my-8 ml-4">
+                    Browse By Categories
+                </h1>
+            </div>
             <div class="grid grid-cols-2 gap-6 lg:grid-cols-6 lg:gap-8">
                 <!-- box 1 -->
                 <div class="w-44 h-56 lg:w-52 lg:h-64 bg-[#F9DF8A] rounded-xl mx-auto shadow-md">
@@ -255,24 +257,53 @@
             </div>
         </section>
         <!-- my section -->
-        <section class="md:container md:mx-auto my-8 mx-4 relative -bottom-10">
-            <div class="mockup-phone">
-                <div class="camera"></div>
-                <div class="display">
-                    <div class="artboard artboard-demo phone-1">Hi.</div>
+        <section class="bg-slate-50 p-36">
+
+            <div class="md:container md:mx-auto my-8 mx-4">
+                
+                <div class="flex">
+                    <div class=" flex-1">
+                        <h1 class="font-display text-2xl md:text-3xt lg:text-7xl text-[#333438] my-8 ml-4">
+                            Welcome
+                        </h1>
+                        
+                    </div>
+
+                    <div class="mockup-phone shadow-xl">
+                        <div class="camera"></div>
+                        <div class="display">
+                            <div class="artboard artboard-demo phone-1 animate-pulse">
+                                <p class="text-sora font-semibold text-4xl">Hi.</p>
+                                <br>
+                                <br>
+                                <div class="flex w-52 flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <div class="skeleton h-16 w-16 shrink-0 rounded-full"></div>
+                                        <div class="flex flex-col gap-4">
+                                            <div class="skeleton h-4 w-20"></div>
+                                            <div class="skeleton h-4 w-28"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton h-32 w-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ... -->
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Trending Pet Products -->
-        <section class="lg:bg-[#FFF9F4] lg:my-32">
-            <div class=" md:container mx-auto lg:py-36">
+        <section class="lg:bg-[#FFF9F4] lg:my-32 mx-4 mt-6">
+            <div class="md:container mx-auto lg:py-36">
                 <h1 class="font-display text-2xl md:text-3xl lg:text-4xl text-[#111] text-start my-8 ml-4">
                     Trending Pet Products
                 </h1>
-                <div class="lg:flex space-x-4 items-center">
+                <div class="md:flex">
                     <!-- dog card -->
-                    <div class="card bg-[#F9DF8A] max-w-md shadow-xl">
-                        <div class="card-body items-start">
+                    <div class=" mx-auto md:mx-0 lg:card bg-[#F9DF8A] max-w-md shadow-xl">
+                        <div class="card-body items-start mb-4 mt-20">
                             <h3 class="font-sora text-3xl font-bold">
                                 T- Shirt For Dogs
                             </h3>
@@ -294,211 +325,211 @@
                     </div>
                     <!-- little card 9 -->
                     <div class="grid grid-cols-2 lg:gap-7 lg:grid-cols-3 gap-3">
-                        <!-- card number 1 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            <!-- card number 1 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 2 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 2 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 3 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 3 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 4 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 4 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 5 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 5 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 6 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 6 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 7 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 7 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 8 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 8 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                        </div>
-                        <!-- card number 9 -->
-                        <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
-                            <div class="flex items-center m-4">
-                                <!-- card image -->
-                                <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
-                                    <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
-                                </div>
-                                <!-- card info -->
-                                <div class=" ml-4 w-2/5">
-                                    <div class="rating gap-1">
-                                        <input type="radio" name="rating-3"
-                                            class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
-                                    </div>
-                                    <h3 class="font-sora text-base font-bold">
-                                        Dog
-                                    </h3>
-                                    <p class="font-sora text-base font-normal mx-auto">
-                                        3 items
-                                    </p>
-                                </div>
-                            </div>
+                                            </div>
+                                            <!-- card number 9 -->
+                                            <div class="w-44 lg:w-72 bg-[#ffffff] rounded-xl mx-auto shadow-md">
+                                                <div class="flex items-center m-4">
+                                                    <!-- card image -->
+                                                    <div class="w-2/5 rounded-xl bg-[#FFF9F4]">
+                                                        <img class="m-6" src="c1-assets/dog-cartoon.png" alt="dog-cartoon">
+                                                    </div>
+                                                    <!-- card info -->
+                                                    <div class=" ml-4 w-2/5">
+                                                        <div class="rating gap-1">
+                                                            <input type="radio" name="rating-3"
+                                                                class="mask mask-heart bg-red-400 font-sora text-base font-normal" />4.5
+                                                        </div>
+                                                        <h3 class="font-sora text-base font-bold">
+                                                            Dog
+                                                        </h3>
+                                                        <p class="font-sora text-base font-normal mx-auto">
+                                                            3 items
+                                                        </p>
+                                                    </div>
+                                                </div>
 
                         </div>
 
@@ -516,9 +547,9 @@
                 <h1 class="font-display text-2xl md:text-3xt lg:text-4xl text-[#111] text-start my-8 ml-4">
                     Everyday low Price
                 </h1>
-                <div class="flex justify-around items-center">
+                <div class="flex gap-12">
                     <!-- dog card -->
-                    <div class="card bg-[#F9DF8A] w-3/5 shadow-xl">
+                    <div class="card bg-[#F9DF8A] w-8/12 shadow-xl">
                         <div class="card-body items-start">
                             <h3 class="font-sora text-3xl font-bold">
                                 T- Shirt For Dogs
@@ -533,7 +564,7 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="card bg-[#F9DF8A] w- shadow-xl">
+                    <div class="card bg-[#F9DF8A] w-4/12 shadow-xl">
                         <div class="card-body items-start">
                             <h3 class="font-sora text-3xl font-bold">
                                 T- Shirt For Dogs
@@ -545,7 +576,7 @@
 
                             </div>
                             <div class="">
-                                <figure class="-mt-24 mb-3 float-end">
+                                <figure class="-mt-24 mb-3 flex-end">
                                     <img src="c1-assets/cute-pet-mid.png" alt="cute-pet-small" class="rounded-xl" />
                                 </figure>
                             </div>
@@ -554,16 +585,13 @@
                 </div>
 
         </section>
-        <section class="md:container md:mx-auto my-8 mx-4">
-            
+        <section class="md:container md:mx-auto my-8 -bottom-10">
         </section>
-
-        
     </main>
 
     <!-- footer -->
     <footer class="bg-four-clr bg-opacity-50">
-        <div class="md:container md:mx-auto my-8 mx-4 relative bottom-56">
+        <div class="md:container mx-auto my-8  relative bottom-56">
             <div class="card lg:card-side bg-[#FFF9F4] shadow-xl">
                 <figure class="my-5 ml-5">
                     <img src="c1-assets/cute-pet-mid.png" alt="Album" />
@@ -583,7 +611,7 @@
             <nav>
                 <div class="flex justify-center items-center gap-3">
                     <div class="w-12 h-12">
-                        <img class="w-100%" src="c1-assets/logo-footer.png" alt="logo-header">
+                        <img class="w-100% hover:animate-bounce" src="c1-assets/logo-footer.png" alt="logo-header">
                     </div>
                     <div class="hidden md:block">
                         <a class="font-sora font-normal text-2xl text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
