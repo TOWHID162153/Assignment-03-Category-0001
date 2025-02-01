@@ -139,7 +139,7 @@
     <main class="relative lg:-top-52">
         <!-- section -->
         <!-- Browse By Categories -->
-        <section class="md:container mx-auto ">
+        <section class="md:container mx-auto">
             <h1 class="font-display text-2xl md:text-3xt lg:text-4xl text-[#111] text-start my-8 ml-4">
                 Browse By Categories
             </h1>
@@ -254,7 +254,15 @@
                 </div>
             </div>
         </section>
-
+        <!-- my section -->
+        <section class="md:container md:mx-auto my-8 mx-4 relative -bottom-10">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-1">Hi.</div>
+                </div>
+            </div>
+        </section>
         <!-- Trending Pet Products -->
         <section class="lg:bg-[#FFF9F4] lg:my-32">
             <div class=" md:container mx-auto lg:py-36">
@@ -546,50 +554,65 @@
                 </div>
 
         </section>
-        <section class="md:container mx-auto">
+        <section class="md:container md:mx-auto my-8 mx-4">
+            
+        </section>
+
+        
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-four-clr bg-opacity-50">
+        <div class="md:container md:mx-auto my-8 mx-4 relative bottom-56">
             <div class="card lg:card-side bg-[#FFF9F4] shadow-xl">
                 <figure class="my-5 ml-5">
                     <img src="c1-assets/cute-pet-mid.png" alt="Album" />
                 </figure>
                 <div class="card-body ml-32">
                     <h2 class="card-title text-display font-bold text-4xl my-5 ">Get Pawsome News!</h2>
-                    <p class="text-sora text-xl font-normal mb-9 grow-0 ">Exclusive training tips, ticks, product deals and more.</p>
-                    <input type="text" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs mb-9" />
+                    <p class="text-sora text-xl font-bold mb-9 grow-0 ">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="text" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xl mb-9" />
                     <div class="card-actions justify-start">
                         <button class="btn btn-warning test-sora text-xl">Subscribe</button>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <!-- footer -->
-    <footer class="bg-four-clr bg-opacity-50">
+        </div>
         <footer class="md:container mx-auto footer text-base-content p-10">
+            <!-- footer logo part -->
             <nav>
-                <h6 class="footer-title">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
+                <div class="flex justify-center items-center gap-3">
+                    <div class="w-12 h-12">
+                        <img class="w-100%" src="c1-assets/logo-footer.png" alt="logo-header">
+                    </div>
+                    <div class="hidden md:block">
+                        <a class="font-sora font-normal text-2xl text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                    </div>
+                </div>
+                <a class="link link-hover font-sora text-xl text-info-clr">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</a>
             </nav>
+            <!-- footer sections -->
             <nav>
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
+                <a class="link link-hover font-sora text-xl">Find a pet</a>
+                <a class="link link-hover font-sora text-xl">Breeds</a>
+                <a class="link link-hover font-sora text-xl">Contact</a>
             </nav>
+            <!-- footer icons -->
             <nav>
                 <h6 class="footer-title">Social</h6>
                 <div class="grid grid-flow-col gap-4">
                     <a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="fill-current">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
                             <path
-                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
                             </path>
                         </svg>
+                    </a>
+                    <a>
+                        <img src="/c1-assets/instra.png" alt="instra">
+                    </a>
+                    <a>
+                        <img src="c1-assets/linkdin.png" alt="linkdin">
                     </a>
                     <a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -599,14 +622,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="fill-current">
-                            <path
-                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
-                            </path>
-                        </svg>
-                    </a>
+                    
                 </div>
             </nav>
         </footer>
