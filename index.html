@@ -18,7 +18,17 @@
     <!-- Tailwind CSS Custom -->
     <script>
         tailwind.config = {
-            theme: {
+            theme: { @keyframes wiggle {
+                    0 %,
+                        100 % {
+                            transform: rotate(-3deg);
+                        }
+                    50 % {
+                        transform: rotate(3deg);
+                    }
+                }
+            }
+
                 extend: {
 
                     colors: {
@@ -114,12 +124,12 @@
         <!-- Banner -->
         <div class="md:container mx-auto px-4 py-8 lg:my-20 lg:p-9">
             <div class="relative md:w-7/12 z-1 -bottom-12">
-                <h3 class="font-display text-3xl md:text-5xl lg:text-6xl font-normal text-start">
+                <h3 class="font-display text-3xl md:text-5xl lg:text-6xl font-normal text-start animate-bounce">
                     Pamper Your Pet, <br>
                     Because They Deserve <br>
                     the Bes
                 </h3>
-                <p class="font-sora text-base md:text-lg lg:text-xl font-normal text-info-clr text-start py-4">Discover
+                <p class="font-sora text-base md:text-lg lg:text-xl font-normal text-info-clr text-start py-4 animate-bounce">Discover
                     a world of
                     treats, toys, and <span class="break-words"></span>
                     essentials handpicked for your furry
@@ -127,7 +137,7 @@
                     joy!
 
                 </p>
-                <button class="btn btn-warning font-sora text-base md:text-lg lg:text-xl font-normal">
+                <button class="animate-wiggle btn btn-warning font-sora text-base md:text-lg lg:text-xl font-normal animate-bounce">
                     Find a pet
                 </button>
             </div>
